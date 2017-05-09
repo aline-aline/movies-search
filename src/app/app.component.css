@@ -1,0 +1,7 @@
+md-toolbar {
+  width: 100%;
+}
+
+.title {
+  flex: 1;
+}

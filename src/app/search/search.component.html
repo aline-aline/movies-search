@@ -1,0 +1,26 @@
+<md-card>
+  <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+      <li *ngFor="let movie of movie; let i=index">
+        <div class="collapsible-header">{{ movie.title }}</div>
+        <div class="collapsible-body">
+          <div class="row">
+          <div class="col s12 m6 image">
+            <img *ngIf="movie.poster_path" class="thumbnail" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="{{movie.title}}">
+          </div>
+          <div class="col s12 m6">
+            <p>Release date: {{ movie.release_date }}</p>
+            <p>Overview: {{ movie.overview }}</p>
+            <p>Popularity: {{ movie.popularity }}</p>
+            <p>Vote count: {{ movie.vote_count }}</p>
+          </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+</md-card>
+
+
+
+
+
+
